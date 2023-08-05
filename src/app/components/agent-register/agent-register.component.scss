@@ -1,0 +1,21 @@
+.container {
+    text-align: center;
+    font-family: 'Poppins';
+    color: orange;
+    textarea {
+        border-color: orange;
+        border-width: 3px;
+        
+        border-radius: 10px;
+        font-family: 'Poppins';
+    }
+
+    button {
+        font-family: 'Poppins';
+        border-radius: 10px;
+        padding: 10px 20px;
+        border: none;
+        margin: 5px 20px;
+        color:orange;
+    }
+}

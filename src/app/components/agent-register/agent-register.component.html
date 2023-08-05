@@ -1,0 +1,14 @@
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+<div class="container">
+    <h3>Insert agent names to add:</h3>
+    <div class="top">
+        <textarea name="agent" [(ngModel)]="textareaContent">{{Agents}}</textarea>
+    </div>
+    <div class="bottom">
+        <button class="add" [disabled]="!textareaContent" (click)="additem()"> + Add Note </button>
+        <button class="clear" (click)="reset()"> Reset </button>
+    </div>
+
+</div>

@@ -1,0 +1,26 @@
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+
+<div class="container">
+    <h3>Select Agent names (@agent name)</h3>
+   
+    <div class="dropdown">
+        <textarea id="search" type="text"(input)="onInputChange($event)" [(ngModel)]="searchitem" >
+         
+        </textarea>
+        <div class="selection">
+            <div class="items" *ngFor="let item of selections">
+               {{item}}
+            </div>
+        </div>
+        <ul id="dropdownList" class="dropdown-list" *ngIf="showdropdown">
+            <li *ngFor="let value of matchingValues" (click)="selectValue(value)">{{value}}</li>        
+        </ul>
+    </div>
+   
+</div>
+
+
+
